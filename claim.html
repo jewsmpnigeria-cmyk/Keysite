@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Get Key</title>
+<script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script><script>linkvertise(8287561, {whitelist: ["https://getkey-phi.vercel.app/"], blacklist: []});</script>
+<script data-cfasync="false" src="https://abscloud.org/1/0d3676ec2e217b741753820a2c4ead9a"></script>
+<style>
+:root{--bg:#0f1115;--card:#171a21;--line:#262b36;--txt:#e8eaf0;--mut:#8b93a5;--acc:#5b8cff}
+@media(prefers-color-scheme:light){:root{--bg:#f3f5f9;--card:#fff;--line:#dfe3ec;--txt:#161a23;--mut:#667085;--acc:#2f61e6}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;padding:24px 16px;display:flex;flex-direction:column;align-items:center;gap:16px}
+.card{width:100%;max-width:440px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+h1{margin:0 0 6px;font-size:1.5rem}p{margin:0 0 18px;color:var(--mut)}
+button{width:100%;padding:13px;border:0;border-radius:10px;background:var(--acc);color:#fff;font:600 1rem inherit;font-family:inherit;cursor:pointer}
+button:disabled{opacity:.6;cursor:wait}button:focus-visible{outline:2px solid var(--txt);outline-offset:2px}
+textarea{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--txt);font:14px ui-monospace,monospace;resize:none;margin-bottom:12px}
+.bar{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin:16px 0}.bar i{display:block;height:100%;width:0;background:var(--acc);transition:width .4s}
+.ad{max-width:100%;overflow-x:auto;display:flex;justify-content:center}.err{color:#e5484d}
+</style></head><body>
+<div class="ad"><script>atOptions={"key":"97babe0c8b37b7c0777a244c68703c75","format":"iframe","height":300,"width":160,"params":{}};</script><script src="https://bauval.org/22/97babe0c8b37b7c0777a244c68703c75"></script></div>
+<div class="ad"><script>atOptions={"key":"c80aec0b5c945138825411faf4fb6645","format":"iframe","height":90,"width":728,"params":{}};</script><script src="https://bauval.org/22/c80aec0b5c945138825411faf4fb6645"></script></div>
+<div class="ad"><script>atOptions={"key":"23d423d0c03abf391295a12b720095fe","format":"iframe","height":50,"width":320,"params":{}};</script><script src="https://bauval.org/22/23d423d0c03abf391295a12b720095fe"></script></div>
+<div class="ad"><script>atOptions={"key":"d588f749935bcc5abf3d29c3a16a2f70","format":"iframe","height":600,"width":160,"params":{}};</script><script src="https://bauval.org/22/d588f749935bcc5abf3d29c3a16a2f70"></script></div>
+<div class="ad"><script>atOptions={"key":"829d110e0032613aa52e590f29c264a9","format":"iframe","height":60,"width":468,"params":{}};</script><script src="https://bauval.org/22/829d110e0032613aa52e590f29c264a9"></script></div>
+<div class="ad"><script>atOptions={"key":"0cc6029e85b0bda76ed9e80f836c4047","format":"iframe","height":250,"width":300,"params":{}};</script><script src="https://bauval.org/22/0cc6029e85b0bda76ed9e80f836c4047"></script></div>
+
+<main class="card"><h1 id="t">Generating your key</h1><p id="s">Hang tight, this only takes a moment.</p>
+<div class="bar" id="bar"><i id="fill"></i></div>
+<div id="out" hidden><textarea id="key" rows="3" readonly></textarea><button id="copy">Copy key</button></div></main>
+<script async="async" data-cfasync="false" src="https://bauval.org/21/93f66d1222d8c0b3f7baa70f59f132c9"></script><div id="container-93f66d1222d8c0b3f7baa70f59f132c9"></div>
+<script>
+(async()=>{
+ const $=id=>document.getElementById(id);
+ const slug=decodeURIComponent(location.pathname.split('/c/')[1]||'');
+ const hash=new URLSearchParams(location.search).get('hash');
+ history.replaceState(null,'',location.pathname);
+ const fail=t=>{$('t').textContent='Could not verify';$('s').textContent=t;$('s').className='err';$('bar').hidden=true;};
+ if(!slug||!hash)return fail('Finish the Linkvertise task first. Go back to the start page and try again.');
+ let p=0;const iv=setInterval(()=>{p=Math.min(p+Math.random()*9,92);$('fill').style.width=p+'%';},500);
+ const wait=new Promise(r=>setTimeout(r,7000));
+ let d;try{const r=await fetch('/api/verify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({slug,hash})});d=await r.json();}catch(e){d={};}
+ await wait;clearInterval(iv);
+ if(!d.ok)return fail(d.error||'Verification failed. Start again from the beginning.');
+ $('fill').style.width='100%';$('t').textContent='Your key is ready';$('s').textContent='Copy it and paste it into the script.';
+ $('bar').hidden=true;$('out').hidden=false;$('key').value=d.key;
+ $('copy').onclick=async()=>{try{await navigator.clipboard.writeText(d.key);}catch(e){$('key').select();document.execCommand('copy');}$('copy').textContent='Copied';setTimeout(()=>$('copy').textContent='Copy key',1800);};
+})();
+</script><script data-cfasync="false" src="https://bauval.org/14/e1b1c2ead63bc9178682aa18fd37b925"></script></body></html>
