@@ -1,34 +1,58 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
-<title>Get Key</title>
+<title>GoldHub</title>
 <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script><script>linkvertise(8287561, {whitelist: ["https://getkey-phi.vercel.app/"], blacklist: []});</script>
 <script data-cfasync="false" src="https://abscloud.org/1/0d3676ec2e217b741753820a2c4ead9a"></script>
 <style>
-:root{--bg:#0f1115;--card:#171a21;--line:#262b36;--txt:#e8eaf0;--mut:#8b93a5;--acc:#5b8cff}
-@media(prefers-color-scheme:light){:root{--bg:#f3f5f9;--card:#fff;--line:#dfe3ec;--txt:#161a23;--mut:#667085;--acc:#2f61e6}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;padding:24px 16px;display:flex;flex-direction:column;align-items:center;gap:16px}
-.card{width:100%;max-width:440px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
-h1{margin:0 0 6px;font-size:1.5rem}p{margin:0 0 18px;color:var(--mut)}
-button{width:100%;padding:13px;border:0;border-radius:10px;background:var(--acc);color:#fff;font:600 1rem inherit;font-family:inherit;cursor:pointer}
-button:disabled{opacity:.6;cursor:wait}button:focus-visible{outline:2px solid var(--txt);outline-offset:2px}
-textarea{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--txt);font:14px ui-monospace,monospace;resize:none;margin-bottom:12px}
-.bar{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin:16px 0}.bar i{display:block;height:100%;width:0;background:var(--acc);transition:width .4s}
-.ad{max-width:100%;overflow-x:auto;display:flex;justify-content:center}.err{color:#e5484d}
+:root{--bg:#0b0c0f;--card:#131418;--in:#1a1b21;--line:#24262e;--txt:#f1f2f5;--mut:#8a8d99;--g:linear-gradient(100deg,#ff9fc9,#f4f3a0 55%,#9cf0d2)}
+@media(prefers-color-scheme:light){:root{--bg:#eef0f4;--card:#fff;--in:#f3f4f8;--line:#dfe2ea;--txt:#15171d;--mut:#6b6f7c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.5 Inter,system-ui,-apple-system,Segoe UI,sans-serif;padding:20px 14px 40px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.card{width:100%;max-width:460px;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;border-bottom:1px solid var(--line)}
+.logo{font-weight:700;font-size:1.1rem;display:flex;align-items:center;gap:8px}.logo:before{content:"";width:12px;height:12px;border-radius:50%;background:var(--g)}
+.top span:last-child{color:var(--mut);font-size:.85rem}
+.body{padding:24px}.lbl{font-weight:600;margin-bottom:10px}
+.bar{height:5px;background:var(--line);border-radius:5px;overflow:hidden;margin-bottom:26px}.bar i{display:block;height:100%;background:var(--g);transition:width .6s}
+.steps{list-style:none;margin:0;padding:0}.step{display:grid;grid-template-columns:34px 1fr;gap:16px;position:relative;padding-bottom:22px}
+.step:not(:last-child):before{content:"";position:absolute;left:16px;top:38px;bottom:4px;width:1px;background:var(--line)}
+.dot{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;color:var(--mut);font-size:.9rem;background:var(--card)}
+.on>.dot{border-color:#8fd3ff;color:#8fd3ff;box-shadow:0 0 0 5px rgba(143,211,255,.12)}.ok>.dot{background:var(--g);color:#111;border:0;font-weight:700}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:34px}.row h2{margin:0;font-size:1.2rem;font-weight:700}
+.off h2{color:var(--mut);font-weight:500}.meta{color:var(--mut);font-size:.9rem}
+.c p{color:var(--mut);margin:6px 0 16px;font-size:1.02rem}.c p.hint{display:flex;gap:10px;align-items:center;justify-content:center;font-size:.9rem;margin:12px 0 0}
+.sq{width:16px;height:16px;border:2px solid #ff3b3b;background:#c40000;border-radius:3px;flex:none}
+.grad{width:100%;border:0;border-radius:12px;padding:17px;background:var(--g);color:#14151a;font:600 1.1rem inherit;font-family:inherit;cursor:pointer}
+.grad:disabled{opacity:.6;cursor:wait}button:focus-visible,summary:focus-visible{outline:2px solid #8fd3ff;outline-offset:2px}
+.note{display:flex;gap:10px;background:var(--in);border-radius:12px;padding:14px 16px;color:var(--mut);font-size:.95rem;margin-top:4px}
+details{text-align:center;margin-top:22px;color:var(--mut)}summary{cursor:pointer;list-style:none}details p{font-size:.9rem;margin:10px 0 0}
+footer{display:flex;gap:22px;padding:18px 24px;border-top:1px solid var(--line);color:var(--mut);font-size:.95rem;background:rgba(127,127,127,.04)}footer b{color:var(--txt);font-weight:500}
+.err{color:#ff6b6b;margin:10px 0 0!important}textarea{width:100%;padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--in);color:var(--txt);font:14px ui-monospace,monospace;resize:none;margin:4px 0 12px}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.7);display:grid;place-items:center;z-index:9999;padding:16px}.ov[hidden]{display:none}
+.mod{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;width:100%;max-width:320px;text-align:center}.mod h3{margin:0 0 4px}.mod p{margin:0 0 16px;color:var(--mut)}
+.sqs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.sqs button{aspect-ratio:1;border:0;border-radius:10px;cursor:pointer}
+.ad{max-width:100%;overflow-x:auto;display:flex;justify-content:center}.gen{height:5px;background:var(--line);border-radius:5px;overflow:hidden;margin-top:12px}.gen i{display:block;height:100%;width:0;background:var(--g);transition:width .5s}
 </style></head><body>
 <div class="ad"><script>atOptions={"key":"c80aec0b5c945138825411faf4fb6645","format":"iframe","height":90,"width":728,"params":{}};</script><script src="https://bauval.org/22/c80aec0b5c945138825411faf4fb6645"></script></div>
 <div class="ad"><script>atOptions={"key":"23d423d0c03abf391295a12b720095fe","format":"iframe","height":50,"width":320,"params":{}};</script><script src="https://bauval.org/22/23d423d0c03abf391295a12b720095fe"></script></div>
 <div class="ad"><script>atOptions={"key":"0cc6029e85b0bda76ed9e80f836c4047","format":"iframe","height":250,"width":300,"params":{}};</script><script src="https://bauval.org/22/0cc6029e85b0bda76ed9e80f836c4047"></script></div>
 
-<main class="card"><h1>Get your key</h1><p>Complete one short task to unlock your key. It takes about a minute.</p>
-<button id="go">Start</button><p id="msg" class="err" style="margin:12px 0 0"></p></main>
+<main class="card"><div class="top"><span class="logo">GoldHub</span><span>get key</span></div><div class="body">
+<div class="lbl">task 1 of 1</div><div class="bar"><i style="width:33%"></i></div>
+<ol class="steps"><li class="step on"><span class="dot">1</span><div class="c"><div class="row"><h2>complete the link</h2><span class="meta">linkvertise</span></div>
+<p>open the link (linkvertise) and finish it. you'll land back here on your own.</p>
+<button id="go" class="grad">open link &nbsp;↗</button><p id="msg" class="err" hidden></p></div></li>
+<li class="step off"><span class="dot"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9m-3 3l3 3"/></svg></span><div class="c"><div class="row"><h2>your key</h2><span class="meta">free key</span></div></div></li></ol>
+<div class="note"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex:none;margin-top:2px"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></svg><span>finish the link on the same browser you opened this in, or the key won't unlock.</span></div><details><summary>having trouble?</summary><p>turn off adblock, finish the link in the same browser, and don't skip the page. if it fails, start again from the first step.</p></details></div><footer><b>GoldHub</b><span>one short task</span></footer></main>
 <script async="async" data-cfasync="false" src="https://bauval.org/21/93f66d1222d8c0b3f7baa70f59f132c9"></script><div id="container-93f66d1222d8c0b3f7baa70f59f132c9"></div>
 <script>
-document.getElementById('go').onclick=async function(){
- const b=this,m=document.getElementById('msg');b.disabled=true;b.textContent='Preparing…';m.textContent='';
+const $=i=>document.getElementById(i);
+$('go').onclick=function(){
+ const b=this;b.disabled=true;b.textContent='opening…';
  try{
-  const r=await fetch('/api/start',{method:'POST'});const d=await r.json();
-  if(!d.url)throw 0;
+  const a=new Uint8Array(24);crypto.getRandomValues(a);
+  const slug=[...a].map(x=>x.toString(16).padStart(2,'0')).join('');
+  localStorage.setItem('gh_s',JSON.stringify({slug:slug,t:Date.now()}));
   window.open('https://araplhn.org/4/51a0b2e7d99d8bc57f644899702b949e','_blank');
-  location.href=d.url;
- }catch(e){b.disabled=false;b.textContent='Start';m.textContent='Something went wrong. Try again.';}
+  location.href='https://link-to.net/8287561/'+Math.floor(Math.random()*1000)+'/dynamic?r='+encodeURIComponent(btoa(location.origin+'/c/'+slug));
+ }catch(e){b.disabled=false;b.innerHTML='open link &nbsp;↗';$('msg').hidden=false;$('msg').textContent='could not start. turn off private mode and try again.';}
 };
 </script><script data-cfasync="false" src="https://bauval.org/14/e1b1c2ead63bc9178682aa18fd37b925"></script></body></html>
